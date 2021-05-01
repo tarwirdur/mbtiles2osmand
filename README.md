@@ -23,3 +23,20 @@ Simple:
 Converting tiles to jpeg with compression:
 `python3 mbtiles2osmand.py --jpg 75 input.mbtiles output.sqlitedb`
 
+___
+
+# unite_osmand
+
+`python3 unite_osmand.py [-h] [-f] input [input ...] output`
+
+```
+Unite multiple osmand files into single
+
+positional arguments:
+  input       input files. If multiple files contain tile with the same coordinates, tile from first (from argument list file will be used
+  output      output file
+
+optional arguments:
+  -h, --help  show this help message and exit
+  -f, -force  override output file if exists
+```
